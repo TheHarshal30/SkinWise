@@ -8,6 +8,13 @@ const gettodo = asyncHandler(async (req, res) => {
   });
   
 
+  // get all categories
+const getallc = asyncHandler(async (req, res) => {
+    const product = await Product.find({ user_id: req.user.id }).distinct("cat")
+    console.log("aaa")
+    res.status(200).json(product);
+  });
+
 // get a single product
 const gettodoc = asyncHandler(async(req, res) =>{
     try {
@@ -76,5 +83,6 @@ module.exports = {
     gettodoc,
     createtodo,
     updatetodo,
+    getallc,
     deletetodo
 }
