@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
-const proudctRoute = require('./routes/todoRoutes');
+const reportRoute = require('./routes/reportRoutes');
 const userRoute = require('./routes/userRoutes');
 
 const errorMiddleware = require('./middleware/errorMiddleware')
@@ -24,8 +24,10 @@ app.use(express.urlencoded({extended: false}))
 
 //routes
 
-app.use('/api/products', proudctRoute);
-app.use("/api/users", userRoute);
+app.use('/api/reports', reportRoute);
+
+ 
+// app.use("/api/users", userRoute);
 
 
 // app.get('/', (req, res) => {
