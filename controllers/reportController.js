@@ -16,9 +16,10 @@ const getreports = asyncHandler(async(req, res) =>{
 const createreport = asyncHandler(async(req, res) => {
         const { 
             user_id,
+            image,
             predL,
-        date,
-        cure ,
+            date,
+            cure ,
             Acne_Rosacea,
             Actinic_Keratosis_Basal_Cell_Carcinoma,
             Atopic_Dermatitis,
@@ -45,6 +46,7 @@ const createreport = asyncHandler(async(req, res) => {
     
         const product = await Report.create({
             user_id,
+            image,
             predL,
         date,
         cure ,

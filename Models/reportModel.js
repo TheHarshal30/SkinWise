@@ -7,6 +7,10 @@ const reportSchema = mongoose.Schema(
             required: true,
         },
 
+        image: {
+            type: String,
+            required: true,
+        },
         predL : {
             type: String,
             required: true,
