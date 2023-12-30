@@ -2,7 +2,6 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const reportRoute = require('./routes/reportRoutes');
-const userRoute = require('./routes/userRoutes');
 
 const errorMiddleware = require('./middleware/errorMiddleware')
 var cors = require('cors')
@@ -26,17 +25,6 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }))
 
 app.use('/api/reports', reportRoute);
 
- 
-// app.use("/api/users", userRoute);
-
-
-// app.get('/', (req, res) => {
-//     res.send('Hello NODE API')
-// })
-
-// app.get('/blog', (req, res) => {
-//     res.send('Hello Blog, My name is Devtamin')
-// })
 
 app.use(errorMiddleware);
 
@@ -49,5 +37,5 @@ connect(MONGO_URL)
         console.log(`Node API app is running on port ${PORT}`)
     });
 }).catch((error) => {
-    console.log(error)
+    console.log(error) 
 })
