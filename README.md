@@ -58,6 +58,10 @@ The paper [On Out-of-Distribution Detection Algorithms with Deep Neural Cancer C
  <img src="assets/image.png" width=700px/>
 </div>
 
+### Branch Overview
+- main (Flutter Code)
+- Backend (MongoDB Integrations)
+- MachineLearning (Experiments with ML libraries and models)
 
 ## How to use the application? 📲
 -  Clone the repository
