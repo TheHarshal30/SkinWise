@@ -1,8 +1,12 @@
 # SkinWise:  For diagnosis, treatment and research in dermatology
 
 <div align="center">
- <img src="assets/logo.png" width=400px/>
+<video src="https://github.com/TheHarshal30/SkinWise/assets/102434280/add32385-6e66-41be-82ad-883c1d97bf02" ></video>
 </div>
+
+
+
+
 
 ## Purpose 🎯
 The Global Burden of Disease project has shown that skin diseases continue to be the 4th leading cause of nonfatal disease burden worldwide.Additionally, skin disorders pose a significant threat to patients' well-being, mental health, ability to function, and social participation. However, it is very difficult to provide better dermatological care to under-served or resource-poor regions in a cost-effective manner owing to unavailability of efficient diagnostic tools, lack of connectivity, and poor laboratory infrastructure etc. Moreover, there is also a scarcity of physicians with dermatological training. Even, preliminary screening of a dermatological manifestation seems to be an arduous task.
